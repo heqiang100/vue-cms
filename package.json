@@ -31,6 +31,7 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
+    "@babel/core": "7.14",
     "@babel/preset-env": "^7.8.4",
     "@vue/cli-plugin-babel": "^4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.0",
@@ -47,9 +48,11 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.1.2",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^8.0.2",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^10.0.0",
     "svg-sprite-loader": "^4.2.1",
-    "vue-template-compiler": "^2.6.11"
+    "url-loader": "^4.1.1",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "4.5"
   }
 }

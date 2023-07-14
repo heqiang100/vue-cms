@@ -68,7 +68,7 @@
         </el-button>
       </el-form-item>
     </el-form>
-    <div class="footer">
+    <!-- <div class="footer">
       <span>本网站由</span>
       <a
         class="upyun"
@@ -77,7 +77,7 @@
         <img src="./又拍云_logo6.png" />
       </a>
       <span>提供CDN加速/云存储服务</span>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -93,8 +93,8 @@ export default {
       codeHtml: '',
       cookiePassword: '',
       loginForm: {
-        userName: 'admin',
-        password: '123456',
+        userName: '',
+        password: '',
         rememberMe: false,
         captcha: '',
         uuid: ''

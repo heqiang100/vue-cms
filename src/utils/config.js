@@ -1,1 +1,1 @@
-export const baseImgUrl = process.env.NODE_ENV === 'development' ? '/img_url' : ''
+export const baseImgUrl = process.env.NODE_ENV === 'development' ? '/img_url' : '/kt_api'

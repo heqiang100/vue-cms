@@ -13,6 +13,13 @@ export default {
   // 文章模块
   ArticleList: () => import('@/views/admin/blogModel/articleList'),
   ArticleType: () => import('@/views/admin/blogModel/articleType'),
-  FriendlyLink: () => import('@/views/admin/blogModel/friendlyLink')
+  FriendlyLink: () => import('@/views/admin/blogModel/friendlyLink'),
+
+  DeviceList: () => import('@/views/admin/device/deviceList'),
+  BrandList: () => import('@/views/admin/device/brandList'),
+  VersionList: () => import('@/views/admin/device/versionList'),
+
+  // 客户端用户管理
+  Client: () => import('@/views/admin/system/client')
 
 }
