@@ -11,7 +11,7 @@
         />
       </el-form-item>
       <el-form-item label="类型" prop="status">
-        <el-select v-model="queryParams.type" placeholder="类型" clearable size="small" @change="handleQuery">
+        <el-select filterable v-model="queryParams.type" placeholder="类型" clearable size="small" @change="handleQuery">
           <el-option
             v-for="item in deviceList"
             :key="item.id"

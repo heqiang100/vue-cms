@@ -11,7 +11,7 @@
         />
       </el-form-item>
       <el-form-item label="设备类型" prop="status">
-        <el-select v-model="queryParams.devicesType" placeholder="设备类型" clearable size="small" @change="handleDeviceQuery">
+        <el-select filterable v-model="queryParams.devicesType" placeholder="设备类型" clearable size="small" @change="handleDeviceQuery">
           <el-option
             v-for="item in deviceList"
             :key="item.id"
@@ -21,7 +21,7 @@
         </el-select>
       </el-form-item>
       <el-form-item label="品牌类型" prop="status">
-        <el-select v-model="queryParams.brandsType" placeholder="品牌类型" clearable size="small" @change="handleQuery">
+        <el-select filterable v-model="queryParams.brandsType" placeholder="品牌类型" clearable size="small" @change="handleQuery">
           <el-option
             v-for="item in queryBrandList"
             :key="item.id"
@@ -151,7 +151,7 @@
           <el-input v-model="form.name" placeholder="请输入款式名称" />
         </el-form-item>
         <el-form-item label="设备类型" prop="devicesType">
-          <el-select v-model="form.devicesType" placeholder="设备类型" @change="handleModifyDevice">
+          <el-select filterable clearable v-model="form.devicesType" placeholder="设备类型" @change="handleModifyDevice">
             <el-option
               v-for="item in deviceList"
               :key="item.id"
@@ -161,7 +161,7 @@
           </el-select>
         </el-form-item>
         <el-form-item label="品牌类型" prop="brandsType">
-          <el-select v-model="form.brandsType" placeholder="品牌类型">
+          <el-select filterable clearable v-model="form.brandsType" placeholder="品牌类型">
             <el-option
               v-for="item in modifyBrandList"
               :key="item.id"
@@ -171,7 +171,7 @@
           </el-select>
         </el-form-item>
         <el-form-item label="can波特率" prop="canBaudRate">
-          <el-select v-model="form.canBaudRate" placeholder="can波特率">
+          <el-select clearable filterable v-model="form.canBaudRate" placeholder="can波特率">
             <el-option
               v-for="item in canBaudRateList"
               :key="item.id"
@@ -181,7 +181,7 @@
           </el-select>
         </el-form-item>
         <el-form-item label="lin波特率" prop="linBaudRate">
-          <el-select v-model="form.linBaudRate" filterable  allow-create placeholder="lin波特率">
+          <el-select clearable v-model="form.linBaudRate" filterable  allow-create placeholder="lin波特率">
             <el-option
               v-for="item in linBaudRateList"
               :key="item.id"
